@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,400&family=Oswald:wght@200;500&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* back-to-top start */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 15px;
+    display: none;
+    background: var(--color-1);
+    border: none;
+}
+/* back-to-top ned */
+
+:root {
+    --color-1: #5fc2ff;
+    --color-2: #48baff;
+    --color-3: #f5f9f9;
+}
+
+/*MENU start*/
+
+.header-part {
+    background: #f1f1f1;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    transition: .4s;
+}
+
+.bg-scroll {
+    background: var(--color-1);
+    transition: .4s;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 255, 0.25) 0px 50px 100px -20px, rgba(0, 255, 200, 0.3) 0px 30px 60px -30px, rgba(171, 210, 249, 0.35) 0px -2px 6px 0px inset;
+}
+
+.bg-scroll .bg-scroll-a {
+    color: white;
+}
+
+.bg-scroll .bg-scroll-a:hover {
+    color: whitesmoke;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 40%;
+}
+
+.bg-scroll .blue-logo {
+    display: none;
+}
+.bg-scroll .white-logo {
+    display: block !important;
+}
+
+.menu-part {
+    display: flex;
+    gap: 24px;
+    /* border-radius: 5%; */
+    text-align: center;
+}
+
+.menu-part li a {
+    display: block;
+    padding: 15px 0;
+    font-size: 20px;
+    color: black;
+}
+.menu-part li a:hover {
+    color:var(--color-1);
+}
+
+.menu-part li {
+    position: relative;
+}
+
+.container {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-part-collapse {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    margin: 15px 0;
+    display: none;
+}
+/*menu end*/
+
+
+
+/*hero part strt*/
+.hero-part {
+    background: url(../inside_img/strict-hero-BG.png) no-repeat center;
+    background-size: cover;
+    padding: 90px 0;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-1);
+}
+.hero-content {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-right: 250px;
+    padding-right: 0px;
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 80px;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Times, serif
+}
+
+.hero-content h2:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 100px;
+}
+.hero-content img {
+    align-items: center;
+    padding-right: 250px;
+    /* padding-left: 30px;
+    padding-right: 500px; */
+}
+
+.hero-content  p {
+    align-items: center;
+    padding-right: 280px;
+    font-size: 20px;
+    /* padding-left: 30px;
+    padding-right: 500px; */
+}
+
+.hero-button {
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 60px;
+    /* padding-top: 10px; */
+}
+
+.hero-button a {
+    background: none;
+    border: 1px solid white;
+    /*border-radius: 20%;*/
+    font-family: 'Oswald', sans-serif;
+    border: 1px solid var(--color-1);
+    color: white;
+    border-radius: 5px;
+}
+
+.hero-button a:hover {
+    background: var(--color-1);
+    transition: 0.4s;
+    border: none;
+    border-radius: 50px;
+   /* color: red;*/
+}
+
+.arrow {
+    text-align: center !important;
+    padding-right: 60px;
+    padding-top:  60px;
+}  
+.arrow a {
+    color: white;
+}
+
+.arrow a:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 100%;
+    font-size: 30px;
+}
+/*hero part end*/
+
+
+/*about part start*/
+.about-part {
+    padding-top: 60px;
+    background: var(--color-3);
+    height: 320px;
+}
+
+.about-content h3 {
+    letter-spacing: 3px;
+}
+.about-content {
+    text-align: center;
+}
+
+.about-content p {
+    padding-top: 24px;
+    padding-right: 60px;
+    padding-left: 60px;
+    line-height: 30px;
+    height: 125px;
+}
+.about-content p:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    padding: 15px;
+    border-radius: 5px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+/*about part end*/
+
+
+
+/*service part start*/
+.sarvice-part {
+    padding-top: 60px;
+}
+
+.service-content-main {
+    padding-left: 24px;
+}
+.service-content {
+    padding: 40px 20px 20px 0px;
+    text-align: center;
+    position: relative;
+    transition: 0.4s;
+    width: 350px;
+
+}
+
+.service-content h5 {
+    letter-spacing: 2px;
+}
+.service-content p {
+    padding: 10px;
+    text-align: center;
+}
+
+.service-icon {
+    padding-bottom: 50px;
+}
+.service-icon a i {
+    height: 65px;
+    width: 65px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 47%;
+    transform: translatex(-50%);
+    color: white;
+    font-size: 40px;
+    background: linear-gradient(90deg, rgba(72,186,255) 50%, rgba(95,194,255) 50%);
+    /* --color-1: #5fc2ff;
+    --color-2: #48baff; */
+}
+.service-content:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 5%;
+}
+/*service part end*/
+
+
+
+/*portfolio-part start*/
+.portfolio-part {
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+.portfolio-head-main{
+    display: flex;
+    justify-content: center;
+}
+.portfolio-head {
+    padding-bottom: 40px;
+    line-height: 0;
+}
+.portfolio-head h6 {
+    line-height: 30px;
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.portfolio-head p {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+.portfolio-img img {
+    width: 100%;
+}
+.portfolio-img {
+    /*margin-top: 10px;*/
+    position: relative;
+    /* overflow: hidden; */
+}
+.portfolio-img:hover .portfolio-img-overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    transform: scale(1);
+}
+.portfolio-img-overlay {
+    height: 100%;
+    width: 0%;
+    background: #48b9ffde;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*right: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scale(0);
+}
+.portfolio-img-overlay a {
+    border-radius: 5%;
+    text-align: center;
+    justify-content: center;
+    line-height: 40px;
+    color: white; 
+    text-decoration: none; 
+    background: var(--color-2);
+    border: none;
+    display: flex;
+}
+/*portfolio-part end*/
+
+
+
+/*contact-part start*/
+.contact-part {
+    background:url(..//inside_img/strict-contact-bg.jpg);
+    height: 520px;
+}
+
+.contact-container {
+    background: #2d394fe6;
+    height: 520px;
+    width: 100%;
+}
+.contact-content-main {
+    color: white;
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-content h3 {
+    letter-spacing: 3px;
+}
+
+.contact-content p {
+    /* padding-top: 12px; */
+    justify-content: center;
+}
+.contact-content:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 2%;
+}
+/* ==================== */
+.contact-form-name {
+    display: flex;
+    gap: 14px;
+    padding-bottom: 15px;  
+}
+.contact-form-name input {
+    width: 100%; 
+    height: 50px;
+    background: none;
+    color: rgb(142, 142, 142);
+    border: 1px solid white;
+}
+.contact-form-name input ::placeholder {
+    font-size: 14px;
+}
+
+.contact-form-mail {
+    padding-bottom: 15px; 
+}
+.contact-form-mail input {
+    width: 100%; 
+    height: 50px;  
+    background: none;
+    color: rgb(142, 142, 142);
+    border: 1px solid white;
+}
+
+.message {
+    width: 100%; 
+    height: 150px; 
+    padding: 10px;
+    background: none;
+    color: rgb(142, 142, 142);
+    border: 1px solid white;
+}
+
+.contact-content-chk {
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.contact-content-chk label {
+    padding-left: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: text;
+    text-align: center;
+}
+
+.contact-content-chk label:hover {
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 50%;
+}
+/* ====================================== */
+
+.contact-content-sub {
+    text-align: end;
+    padding-top: 5px;
+}
+.contact-content-sub input {
+    background: none;
+    border: 1px solid var(--color-2);
+    color: white;
+    align-items: end;
+    text-decoration: none;
+    width: 100px;
+     padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.contact-content-sub input:hover {
+    border: none;
+    box-shadow: rgb(0, 221, 255) 0px 2px 4px 0px, rgb(70, 138, 255) 0px 2px 16px 0px;
+    border-radius: 50%;
+}
+/*contact-part end*/
+
+
+
+/*copyright-part start*/
+
+.copyright-part {
+    background: rgb(255, 255, 255);
+    font-family: sans-serif;
+    height: 50px;
+    padding-bottom: 0px;
+    /*padding: 0;*/
+}
+
+.copyright-content p {
+    padding-top: 20px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    text-decoration: none; 
+    justify-content: center;
+}
+
+.copyright-icon {
+    color: white;
+    display: flex;
+    justify-content: end;
+    gap: 32px;
+    padding-top: 20px;
+    text-align: end;
+    text-decoration: none; 
+}
+
+.copyright-icon li {
+    list-style: none;
+    margin: 0;
+    font-size: 15px;
+    background: var(--color-2);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.copyright-icon  li a {
+    text-decoration: none;
+    color: white;
+    color: 0.3s;
+}
+/*copyright-part end*/
